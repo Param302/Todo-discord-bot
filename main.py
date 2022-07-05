@@ -6,6 +6,7 @@ import discord
 from dotenv import load_dotenv
 
 load_dotenv()
+
 client = discord.Client()
 
 @client.event
@@ -17,8 +18,19 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('$hello'):
-        await message.channel.send('Hello!')
+    if message.content.startswith('&'):
+        """
+        Commands:-
+        & addme - For adding a user
+        & addtask - For adding single task
+        & show - For showing today's task
+        & showcompleted - For looking which tasks are completed
+        & change - For changing a specific task
+        """
+
+        data = (message.content).split(" ")
+        await message.channel.send(f'Command = {data[1]}')
+
 
 try:
     client.run(os.getenv("TOKEN"))
