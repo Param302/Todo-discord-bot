@@ -1,9 +1,11 @@
 # This code is based on the following example:
 # https://discordpy.readthedocs.io/en/stable/quickstart.html#a-minimal-bot
 
-import discord
 import os
+import discord
+from dotenv import load_dotenv
 
+load_dotenv()
 client = discord.Client()
 
 @client.event
