@@ -1,0 +1,37 @@
+Commands:-
+        & addme - For adding a user
+        & addtask - For adding single task
+        & show - For showing today's task
+        & showcompleted - For looking which tasks are completed
+        & change - For changing a specific task
+
+
+features:- 
+
+1: add user
+2: remove user (if user nhi aaya 45 days tak)
+3: Add task
+    1: user is registered or not. 
+    2: a. &addtask single_task 
+    2: b. &addtask
+            task 1
+            task 2
+4: & show (like compiler laguages mode <- ->)
+    1: Edit mode.
+        1: up and down arrow key
+        2: mark as complete or incomplete
+        3: Delete the selected task
+        4: Add task.
+    2: View mode.(default view)
+        1: Show all.
+        2: Show completed
+        3: Show incompleted
+
+
+5: & Delete
+    1: Take Confirmation y/n (check with reaction. (yes) (no)
+
+6: & summary (default everyday show after 12 hr.)
+    1: graph show ratio of today and previous 10 days or 30 days.
+    2: Pychart should be made.
+    
